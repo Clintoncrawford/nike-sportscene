@@ -228,14 +228,12 @@ img.nike-logo {
 
 /* Product shop now */
 .plus {
+    width: 16px;
+    height: 16px;
     position: fixed;
-    bottom: 16px;
+    bottom: 27px;
     right: 5%;
-    z-index: 3;
-    color: #000000;
-    font-size: 30px;
-    text-align: center;
-    font-family: auto;
+    z-index: 2;
     transform-origin: center;
     cursor: pointer;
     -webkit-transition: .1s ease-in-out;
@@ -245,13 +243,33 @@ img.nike-logo {
     -webkit-tap-highlight-color: transparent;
 }
 
+.plus:before, .plus:after {
+    content: "";
+    position: absolute;
+    background: rgb(0, 0, 0);
+}
+ 
+.plus:before {
+    left: 50%;
+    width: 1px;
+    margin-left: 0;
+    height: 100%;
+}
+ 
+.plus:after {
+    top: 50%;
+    height: 1px;
+    margin-top: 0;
+    width: 100%;
+}
+ 
 .plus-close {
     transform: rotate(45deg);
     -webkit-transition: .1s ease-in-out;
     -moz-transition: .1s ease-in-out;
     -o-transition: .1s ease-in-out;
     transition: .1s ease-in-out;
-    bottom: 137px;
+    bottom: 150px;
 }
 
 a.shop-now-button {
